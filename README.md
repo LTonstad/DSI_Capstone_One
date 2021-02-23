@@ -1,6 +1,4 @@
-# Capstone 1 - Proposals
-
-## [eSports Winnings](https://www.kaggle.com/jackdaoud/esports-earnings-for-players-teams-by-game)
+# Capstone 1: [eSports Winnings](https://www.kaggle.com/jackdaoud/esports-earnings-for-players-teams-by-game)
 
 ### Dataset
 
@@ -24,4 +22,4 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 ### To-do's:
 
-* Maybe scrape more from site for comparasons
+* Maybe scrape more from site for comparisons

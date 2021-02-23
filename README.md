@@ -6,6 +6,10 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 ### Visualizations
 
+* Prize share between games
+
+![Prize Share](images/pie_prize_share.png)
+
 * Showing price per tournement grouped by genre
 
 ![Genre Players](images/barh_players_prize_per_genere.png)

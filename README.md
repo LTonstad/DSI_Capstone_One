@@ -9,8 +9,13 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 ### Visualizations
 
 * Showing price per tournement grouped by genre
-* Split out prize per player for games
-* Show where most tournements happen
+
+![Genre Players](data/barh_players_prize_per_genere.png)
+
+* Split out prize per player for games by genre
+
+![Prize per player](data/avg_prize_per_team_by_genre.png)
+
 
 ### Possible Hypothesis
 
@@ -19,4 +24,4 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 ### To-do's:
 
-* Maybe scrape more from site for comparasins
+* Maybe scrape more from site for comparasons

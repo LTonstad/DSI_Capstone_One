@@ -8,11 +8,11 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 * Showing price per tournement grouped by genre
 
-![Genre Players](data/barh_players_prize_per_genere.png)
+![Genre Players](images/barh_players_prize_per_genere.png)
 
 * Split out prize per player for games by genre
 
-![Prize per player](data/avg_prize_per_team_by_genre.png)
+![Prize per player](images/avg_prize_per_team_by_genre.png)
 
 
 ### Possible Hypothesis

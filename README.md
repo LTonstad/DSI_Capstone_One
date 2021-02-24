@@ -2,22 +2,37 @@
 
 ### Dataset
 
-This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has info for players and teams in different tournements.
+This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has info for players and teams in different tournaments.
 
 ### Visualizations
 
-* Prize share between games
+* Prize share between games:
 
 ![Prize Share](images/pie_prize_share.png)
 
-* Showing price per tournement grouped by genre
+* Average team prize per game:
 
-![Genre Players](images/barh_players_prize_per_genere.png)
+![Prize per team](images/average_team_prize_per_game.png)
 
-* Split out prize per player for games by genre
+* Average player prize per game:
+
+![Prize per player](images/barh_players_prize_per_game.png)
+
+* Showing price per tournament grouped by genre:
+
+![Genre Players](images/barh_players_prize_per_genre.png)
+
+* Split out prize per player for games by genre:
 
 ![Prize per player](images/avg_prize_per_team_by_genre.png)
 
+* Prize totals per country:
+
+![Prize per country](images/barh_conrties_prize_total.png)
+
+* Prize averages per country:
+
+![Prize total per country](images/barh_conrties_prize_total.png)
 
 ### Possible Hypothesis
 

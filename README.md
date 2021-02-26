@@ -42,25 +42,36 @@ This dataset consists of eSports earnings of 10 different major eSports titles, 
 
 ## Hypothesis
 
-* First-Person Shooters are the best genre for earning money in any given tournament
+* Null: First-Person Shooters **are not** going to yield significantly more earnings on average compared to other genres
+* Alternative: First-Person Shooters **are** going to yield significantly more earnings on average compared to other genres
 
-    * Explored through bootstrapping all genres data individually 10,000 times, using each teams take home money per tournament:
+Explored through bootstrapping all genres data individually 10,000 times, using each teams take home money per tournament:
 
 ![FPS Bootstrap](images/bootstrapping_fps_hist.png)
 
-This of course paled in comparison to the Multiplayer Online Battle Arena genre
+Based on the bootstrapping samples we fail to reject the null hypothesis, Battle Royale & MOBA make more on average:
 
-![MOBA Bootstrap](images/bootstrapping_moba_hist.png)
 
     FPS Lower & Upper 95%:              FPS Mean:
-    ($7,982.36, $59,928.36)                 $21,830.92
+    ($7,982.36, $59,928.36)             $21,830.92
     
+    Battle Royale upper & lower:        Battle Royale Mean:
+    ($8,998.19, $52,521.23)             $23,797.73
+
     MOBA Lower & Upper 95%:             MOBA Mean:
-    ($10,686.20, $83,250.52)                $33,833.43
+    ($10,686.20, $83,250.52)            $33,833.43
 
 If we plot them both together:
 
 ![FPS and MOBA hist](images/bootstrapping_fpsandmoba_hist.png)
+
+The rest of the bootstrapping numbers:
+    
+    Card Games upper & lower:           Card Game Mean:
+    ($2,990.66, $30,841.32)             $12,276.47
+
+    Strategy upper & lower:             Strategy Mean:
+    ($1,406.12, $20,543.00)             $4,492.51
 
 ## Interesting notes:
 

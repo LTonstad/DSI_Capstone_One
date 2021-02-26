@@ -2,7 +2,7 @@
 
 ## Dataset
 
-This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has info for players and teams in different tournaments.
+This dataset consists of eSports earnings of 10 different major eSports titles, with 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
 
 ### Struggles with Dataset:
 
@@ -10,29 +10,60 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 * Teams df doesn't include a count of players splitting the earnings
 
-* 
+* Would have liked to have more eSports titles included
 
-## Visualizations
+### Games & Genres included:
 
-* Prize share between games:
+    Games:                                  Genres:
+    Dota 2                                  Multiplayer Online Battle Arena (MOBA)
+    Counter-Strike: Global Offensive        First-Person Shooter (FPS)
+    Fortnite                                Battle Royale
+    Hearthstone                             Collectible Card Game
+    Starcraft II                            Strategy
+    Overwatch
+    PUBG
+    League of Legends
+    Heroes of the Storm
+    Arena of Valor
 
-![Prize Share](images/pie_prize_share.png)
-
-* Average team prize per game:
-
-![Prize per team](images/average_team_prize_per_game.png)
-
-* Average player prize per game:
-
-![Prize per player](images/barh_players_prize_per_game.png)
+## Getting to know the data:
 
 * Showing price per tournament grouped by genre:
 
-![Genre Players](images/barh_players_prize_per_genre.png)
+![Genre Teams](images/avg_prize_per_team_by_genre.png)
 
-* Split out prize per player for games by genre:
+* Showing the share of number of tournaments played and winning per tournament:
 
-![Prize per player](images/avg_prize_per_team_by_genre.png)
+![Prize per team](images/game_pies.png)
+
+* Showing Average team earnings in comparison to their total earnings (Size of bubble indicates the amount of tournaments that the team has played in for that game)
+
+![Prize per tournament scatter](images/team_prize_per_tournament.png)
+
+## Hypothesis
+
+* First-Person Shooters are the best genre for earning money in any given tournament:
+    * Explored through bootstrapping all genres data individually 10,000 times, using each teams take home money per tournament:
+
+![FPS Bootstrap](images/bootstrapping_fps_hist.png)
+
+This of course paled in comparison to the Multiplayer Online Battle Arena genre
+
+![MOBA Bootstrap](images/bootstrapping_moba_hist.png)
+
+    FPS Lower & Upper 95%:              FPS Mean:
+    ($7,982.36, $59,928.36)                 $21,830.92
+    
+    MOBA Lower & Upper 95%:             MOBA Mean:
+    ($10,686.20, $83,250.52)                $33,833.43
+
+If we plot them both together:
+
+![FPS and MOBA hist](images/bootstrapping_fpsandmoba_hist.png)
+
+## Interesting notes:
+
+* First-Person Shooters and Strategy games were the only genres with a negative correlation between the amount of tournaments played and prize money taken home
 
 * Prize totals per country:
 
@@ -42,14 +73,7 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 
 ![Prize total per country](images/barh_conrties_prize_total.png)
 
-## Possible Hypothesis
-
-* First-Person Shooters pay more per player
-* It makes more sense for someone to compete in games that do not have teams, or have small teams
-    * Possible issue since I can't get consistent answer on players per game or size of the team without more data
-* 
-
-## To-do's:
+## Would have liked to do:
 
 * Scrape site for more data
     * What games certain teams focus on
@@ -58,4 +82,3 @@ This data was pulled from [eSportsEarning.com](https://www.esportsearnings.com/)
 ## References:
 
 * Site that holds all this information typically --> https://www.esportsearnings.com/
-

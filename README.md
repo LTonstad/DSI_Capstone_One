@@ -2,7 +2,7 @@
 
 ## Dataset ##
 
-This dataset consists of eSports earnings of 10 different major eSports titles, within 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
+This [dataset](https://www.kaggle.com/jackdaoud/esports-earnings-for-players-teams-by-game) consists of eSports earnings of 10 different major eSports titles, within 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
 
 ---------------
 ### Games & Genres included:

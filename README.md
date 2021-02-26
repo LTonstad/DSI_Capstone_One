@@ -1,17 +1,19 @@
 # Capstone 1: [eSports Winnings](https://www.kaggle.com/jackdaoud/esports-earnings-for-players-teams-by-game)
 
-## Dataset
+## Dataset ##
 
 This dataset consists of eSports earnings of 10 different major eSports titles, with 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
 
-### Struggles with Dataset:
+---------------
+### Struggles with Dataset: ###
 
-* No way to link the Teams df with the other df's
+* No way to link the Teams data with the other dataframes
 
-* Teams df doesn't include a count of players splitting the earnings
+* Teams dataframe doesn't include a count of players within the team that is splitting the earnings
 
 * Would have liked to have more eSports titles included
 
+---------------
 ### Games & Genres included:
 
     Games:                                  Genres:
@@ -26,6 +28,7 @@ This dataset consists of eSports earnings of 10 different major eSports titles, 
     Heroes of the Storm
     Arena of Valor
 
+---------------
 ## Getting to know the data:
 
 * Showing price per tournament grouped by genre:
@@ -36,14 +39,16 @@ This dataset consists of eSports earnings of 10 different major eSports titles, 
 
 ![Prize per team](images/game_pies.png)
 
-* Showing Average team earnings in comparison to their total earnings (Size of bubble indicates the amount of tournaments that the team has played in for that game)
+* Showing Average team earnings in comparison to their total earnings (Bubble Size = Amount of tournaments Attended)
 
 ![Prize per tournament scatter](images/team_prize_per_tournament.png)
 
+---------------
 ## Hypothesis
 
-* Null: First-Person Shooters **are not** going to yield significantly more earnings on average compared to other genres
-* Alternative: First-Person Shooters **are** going to yield significantly more earnings on average compared to other genres
+* Null: First-Person Shooters ***are not*** going to yield significantly more earnings on average compared to other genres
+
+* Alternative: First-Person Shooters ***are*** going to yield significantly more earnings on average compared to other genres
 
 Explored through bootstrapping all genres data individually 10,000 times, using each teams take home money per tournament:
 
@@ -73,12 +78,26 @@ The rest of the bootstrapping numbers:
     Strategy upper & lower:             Strategy Mean:
     ($1,406.12, $20,543.00)             $4,492.51
 
+To examine this further investigate this I grouped player data by continent and made calculations for: Prize per person, Total Prize Earnings, People per continent & the distribution of average earnings by Genre:
+
+![Continent Table](images/continent_table.png)
+
+Then using the Pearson method created a correlation matrix:
+
+![Correlation Matrix](images/coor_matrix.png)
+
+Interesting note about this is that only Genre to have a positive correlation with 'PrizePerPerson' is MOBA games at 0.8
+
+---------------
 ## Would have liked to do:
 
 * Scrape site for more data
     * What games certain teams focus on
     * Does allocating time and energy to a specific game or genre have a significant impact on prize earnings
 
+* Use GeoPandas to show Country data through maps
+
+---------------
 ## References:
 
-* Site that holds all this information typically --> https://www.esportsearnings.com/
+* Site that holds all this information where the sample dataset was pulled from --> https://www.esportsearnings.com/

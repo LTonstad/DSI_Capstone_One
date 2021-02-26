@@ -2,16 +2,7 @@
 
 ## Dataset ##
 
-This dataset consists of eSports earnings of 10 different major eSports titles, with 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
-
----------------
-### Struggles with Dataset: ###
-
-* No way to link the Teams data with the other dataframes
-
-* Teams dataframe doesn't include a count of players within the team that is splitting the earnings
-
-* Would have liked to have more eSports titles included
+This dataset consists of eSports earnings of 10 different major eSports titles, within 3 different files (Team data, Player data & Country data). The information was pulled from [eSportsEarning.com](https://www.esportsearnings.com/) and has a lot more records on the site itself than are actually used in here.
 
 ---------------
 ### Games & Genres included:
@@ -91,9 +82,7 @@ Interesting note about this is that only Genre to have a positive correlation wi
 ---------------
 ## Would have liked to do:
 
-* Scrape site for more data
-    * What games certain teams focus on
-    * Does allocating time and energy to a specific game or genre have a significant impact on prize earnings
+* Scrape site for more data in order to include more games/genres
 
 * Use GeoPandas to show Country data through maps
 

@@ -42,7 +42,8 @@ This dataset consists of eSports earnings of 10 different major eSports titles, 
 
 ## Hypothesis
 
-* First-Person Shooters are the best genre for earning money in any given tournament:
+* First-Person Shooters are the best genre for earning money in any given tournament
+
     * Explored through bootstrapping all genres data individually 10,000 times, using each teams take home money per tournament:
 
 ![FPS Bootstrap](images/bootstrapping_fps_hist.png)

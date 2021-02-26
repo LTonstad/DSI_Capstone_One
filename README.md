@@ -85,6 +85,11 @@ Then using the Pearson method created a correlation matrix:
 Interesting note about this is that only Genre to have a positive correlation with 'PrizePerPerson' is MOBA games at 0.8
 
 ---------------
+## Conclusion
+
+We fail to reject the null hypothesis, it is very clear that Multiplayer Online Battle Area (MOBA) games will be your best option in regards to prize money earnings 
+
+---------------
 ## Would have liked to do:
 
 * Scrape site for more data in order to include more games/genres

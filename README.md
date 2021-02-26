@@ -73,18 +73,6 @@ The rest of the bootstrapping numbers:
     Strategy upper & lower:             Strategy Mean:
     ($1,406.12, $20,543.00)             $4,492.51
 
-## Interesting notes:
-
-* First-Person Shooters and Strategy games were the only genres with a negative correlation between the amount of tournaments played and prize money taken home
-
-* Prize totals per country:
-
-![Prize per country](images/barh_conrties_prize_total.png)
-
-* Prize averages per country:
-
-![Prize total per country](images/barh_conrties_prize_total.png)
-
 ## Would have liked to do:
 
 * Scrape site for more data
